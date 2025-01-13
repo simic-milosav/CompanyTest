@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyTest.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyTest.Domain", "CompanyTest.Domain\CompanyTest.Domain.csproj", "{A23F8BD4-21D1-4DF2-A963-3960D27D882A}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0C04654F-17A3-49DA-938A-1464A5FC8E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A23F8BD4-21D1-4DF2-A963-3960D27D882A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A23F8BD4-21D1-4DF2-A963-3960D27D882A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A23F8BD4-21D1-4DF2-A963-3960D27D882A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C04654F-17A3-49DA-938A-1464A5FC8E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C04654F-17A3-49DA-938A-1464A5FC8E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C04654F-17A3-49DA-938A-1464A5FC8E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C04654F-17A3-49DA-938A-1464A5FC8E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
