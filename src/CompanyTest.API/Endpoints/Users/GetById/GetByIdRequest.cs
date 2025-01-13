@@ -12,6 +12,10 @@ public class GetByIdRequest(ISender sender) : Endpoint<GetByIdQuery, UserDto>
         Get(ApiRoutes.UserRoutes.GetById);
         AllowAnonymous();
         Description(x => x.WithTags(RouteTags.Users));
+        Summary(s =>
+        {
+            s.ExampleRequest = new GetByIdQuery(Guid.Empty);
+        });
     }
 
     public override async Task HandleAsync(GetByIdQuery query, CancellationToken token)

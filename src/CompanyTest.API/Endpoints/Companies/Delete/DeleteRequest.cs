@@ -11,6 +11,10 @@ public class DeleteRequest(ISender sender) : Endpoint<DeleteCommand, bool>
         Delete(ApiRoutes.CompanyRoutes.Delete);
         AllowAnonymous();
         Description(x => x.WithTags(RouteTags.Companies));
+        Summary(s =>
+        {
+            s.ExampleRequest = new DeleteCommand(Guid.Empty);
+        });
     }
 
     public override async Task HandleAsync(DeleteCommand command, CancellationToken token)

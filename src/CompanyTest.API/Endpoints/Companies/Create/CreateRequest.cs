@@ -11,6 +11,10 @@ public class CreateRequest(ISender sender) : Endpoint<CreateCommand, bool>
         Post(ApiRoutes.CompanyRoutes.Create);
         AllowAnonymous();
         Description(x => x.WithTags(RouteTags.Companies));
+        Summary(s =>
+        {
+            s.ExampleRequest = new CreateCommand(new("Example Company", "Example Address", Guid.Empty));
+        });
     }
 
     public override async Task HandleAsync(CreateCommand command, CancellationToken token)

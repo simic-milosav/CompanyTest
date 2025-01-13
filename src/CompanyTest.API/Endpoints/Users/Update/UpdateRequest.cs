@@ -11,6 +11,10 @@ public class UpdateRequest(ISender sender) : Endpoint<UpdateCommand, bool>
         Put(ApiRoutes.UserRoutes.Update);
         AllowAnonymous();
         Description(x => x.WithTags(RouteTags.Users));
+        Summary(s =>
+        {
+            s.ExampleRequest = new UpdateCommand(new("Example User", "Example Surname", Guid.Empty));
+        });
     }
 
     public override async Task HandleAsync(UpdateCommand command, CancellationToken token)
